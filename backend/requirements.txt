@@ -23,8 +23,7 @@ email-validator==2.1.0
 tiktoken==0.6.0
 
 # For fuzzy matching
-thefuzz==0.22.1
-python-Levenshtein==0.25.0
+rapidfuzz==3.6.1
 
 # Phone number handling
 phonenumbers==8.13.27
