@@ -1,38 +1,31 @@
-# Web Framework
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-python-multipart==0.0.6
-pydantic==2.5.3
+# Core dependencies for Vercel deployment
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+pydantic==2.6.1
 pydantic-settings==2.1.0
+python-dotenv==1.0.1
+structlog==24.1.0
 
-# OpenAI & LLM
-openai==1.10.0
-langchain==0.1.4
-langchain-openai==0.0.5
-tiktoken==0.5.2
+# Serverless adapter
+mangum==0.17.0
 
 # Database
-supabase==2.3.0
-# psycopg2-binary and pgvector removed - not needed with Supabase REST API
+supabase==2.3.4
+postgrest==0.13.2
 
-# Identity Matching
-rapidfuzz==3.6.1
-phonenumbers==8.13.27
+# OpenAI
+openai==1.12.0
 
 # Utilities
-python-dotenv==1.0.0
-structlog==24.1.0
-httpx==0.24.1
-aiofiles==23.2.1
+python-multipart==0.0.9
+email-validator==2.1.0
+httpx==0.27.0
+tiktoken==0.6.0
 
-# Testing
-pytest==7.4.4
-pytest-asyncio==0.23.3
-pytest-cov==4.1.0
-pytest-mock==3.12.0
+# For fuzzy matching
+thefuzz==0.22.1
+python-Levenshtein==0.25.0
 
-# Development
-black==24.1.1
-flake8==7.0.0
-mypy==1.8.0
-ipython==8.20.0
+# Additional dependencies
+typing-extensions>=4.0.0
+annotated-types>=0.4.0
