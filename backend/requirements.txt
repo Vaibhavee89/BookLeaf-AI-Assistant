@@ -26,6 +26,9 @@ tiktoken==0.6.0
 thefuzz==0.22.1
 python-Levenshtein==0.25.0
 
+# Phone number handling
+phonenumbers==8.13.27
+
 # Additional dependencies
 typing-extensions>=4.0.0
 annotated-types>=0.4.0
