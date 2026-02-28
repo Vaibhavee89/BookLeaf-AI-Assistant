@@ -1,0 +1,223 @@
+[
+  {
+    "full_name": "Sarah Johnson",
+    "email": "sarah.johnson@email.com",
+    "phone": "+1-555-0101",
+    "metadata": {
+      "genre": "Mystery",
+      "books_published": 3,
+      "join_date": "2022-03-15",
+      "preferred_contact": "email"
+    }
+  },
+  {
+    "full_name": "Michael Chen",
+    "email": "m.chen@writemail.com",
+    "phone": "+1-555-0102",
+    "metadata": {
+      "genre": "Science Fiction",
+      "books_published": 5,
+      "join_date": "2021-07-22",
+      "preferred_contact": "whatsapp"
+    }
+  },
+  {
+    "full_name": "Jennifer Smith",
+    "email": "jen.smith@authormail.com",
+    "phone": "+1-555-0103",
+    "metadata": {
+      "genre": "Romance",
+      "books_published": 12,
+      "join_date": "2020-01-10",
+      "preferred_contact": "email"
+    }
+  },
+  {
+    "full_name": "Robert Williams",
+    "email": "rob.williams@gmail.com",
+    "phone": "+1-555-0104",
+    "metadata": {
+      "genre": "Thriller",
+      "books_published": 7,
+      "join_date": "2021-11-05",
+      "preferred_contact": "phone"
+    }
+  },
+  {
+    "full_name": "Emma Davis",
+    "email": "emma.davis@outlook.com",
+    "phone": "+1-555-0105",
+    "metadata": {
+      "genre": "Literary Fiction",
+      "books_published": 4,
+      "join_date": "2022-06-18",
+      "preferred_contact": "email"
+    }
+  },
+  {
+    "full_name": "David Martinez",
+    "email": "d.martinez@authorspace.com",
+    "phone": "+1-555-0106",
+    "metadata": {
+      "genre": "Historical Fiction",
+      "books_published": 6,
+      "join_date": "2020-09-30",
+      "preferred_contact": "email"
+    }
+  },
+  {
+    "full_name": "Lisa Anderson",
+    "email": "lisa.a@writers.net",
+    "phone": "+1-555-0107",
+    "metadata": {
+      "genre": "Fantasy",
+      "books_published": 8,
+      "join_date": "2019-12-12",
+      "preferred_contact": "whatsapp"
+    }
+  },
+  {
+    "full_name": "James Taylor",
+    "email": "james.taylor@email.com",
+    "phone": "+1-555-0108",
+    "metadata": {
+      "genre": "Biography",
+      "books_published": 2,
+      "join_date": "2023-02-28",
+      "preferred_contact": "phone"
+    }
+  },
+  {
+    "full_name": "Maria Garcia",
+    "email": "maria.garcia@authormail.com",
+    "phone": "+1-555-0109",
+    "metadata": {
+      "genre": "Young Adult",
+      "books_published": 9,
+      "join_date": "2020-08-15",
+      "preferred_contact": "instagram"
+    }
+  },
+  {
+    "full_name": "Christopher Brown",
+    "email": "c.brown@writemail.com",
+    "phone": "+1-555-0110",
+    "metadata": {
+      "genre": "Horror",
+      "books_published": 5,
+      "join_date": "2021-04-20",
+      "preferred_contact": "email"
+    }
+  },
+  {
+    "full_name": "Amanda Wilson",
+    "email": "amanda.wilson@gmail.com",
+    "phone": "+1-555-0111",
+    "metadata": {
+      "genre": "Self-Help",
+      "books_published": 3,
+      "join_date": "2022-10-07",
+      "preferred_contact": "email"
+    }
+  },
+  {
+    "full_name": "Daniel Lee",
+    "email": "dan.lee@authors.com",
+    "phone": "+1-555-0112",
+    "metadata": {
+      "genre": "Business",
+      "books_published": 4,
+      "join_date": "2021-05-14",
+      "preferred_contact": "phone"
+    }
+  },
+  {
+    "full_name": "Sarah Johnston",
+    "email": "s.johnston@writemail.com",
+    "phone": "+1-555-0113",
+    "metadata": {
+      "genre": "Children's Books",
+      "books_published": 15,
+      "join_date": "2019-03-22",
+      "preferred_contact": "email",
+      "note": "Similar name to Sarah Johnson - for fuzzy matching test"
+    }
+  },
+  {
+    "full_name": "Matthew Thomas",
+    "email": "matt.thomas@outlook.com",
+    "phone": "+1-555-0114",
+    "metadata": {
+      "genre": "Poetry",
+      "books_published": 6,
+      "join_date": "2020-11-18",
+      "preferred_contact": "instagram"
+    }
+  },
+  {
+    "full_name": "Jessica Moore",
+    "email": "jess.moore@email.com",
+    "phone": "+1-555-0115",
+    "metadata": {
+      "genre": "Cooking",
+      "books_published": 8,
+      "join_date": "2021-08-09",
+      "preferred_contact": "email"
+    }
+  },
+  {
+    "full_name": "Ryan Anderson",
+    "email": "ryan.anderson@writers.net",
+    "phone": "+1-555-0116",
+    "metadata": {
+      "genre": "Travel",
+      "books_published": 5,
+      "join_date": "2022-01-25",
+      "preferred_contact": "whatsapp"
+    }
+  },
+  {
+    "full_name": "Michelle White",
+    "email": "michelle.w@authorspace.com",
+    "phone": "+1-555-0117",
+    "metadata": {
+      "genre": "Memoir",
+      "books_published": 2,
+      "join_date": "2023-05-10",
+      "preferred_contact": "email"
+    }
+  },
+  {
+    "full_name": "Kevin Harris",
+    "email": "kevin.harris@gmail.com",
+    "phone": "+1-555-0118",
+    "metadata": {
+      "genre": "Science",
+      "books_published": 7,
+      "join_date": "2020-06-30",
+      "preferred_contact": "email"
+    }
+  },
+  {
+    "full_name": "Olivia Martin",
+    "email": "olivia.martin@authormail.com",
+    "phone": "+1-555-0119",
+    "metadata": {
+      "genre": "Graphic Novel",
+      "books_published": 4,
+      "join_date": "2021-12-15",
+      "preferred_contact": "instagram"
+    }
+  },
+  {
+    "full_name": "Brandon Thompson",
+    "email": "brandon.t@writemail.com",
+    "phone": "+1-555-0120",
+    "metadata": {
+      "genre": "Drama",
+      "books_published": 3,
+      "join_date": "2022-09-03",
+      "preferred_contact": "phone"
+    }
+  }
+]

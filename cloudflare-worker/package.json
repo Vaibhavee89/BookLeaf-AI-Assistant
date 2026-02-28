@@ -1,0 +1,23 @@
+{
+  "name": "bookleaf-supabase-proxy",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker proxy for Supabase API",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "test": "wrangler dev & sleep 3 && curl http://localhost:8787/health"
+  },
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "supabase",
+    "proxy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.114.17"
+  }
+}

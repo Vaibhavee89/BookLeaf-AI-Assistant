@@ -1,0 +1,113 @@
+# 🚀 BookLeaf AI - Vercel Deployment Summary
+
+## ✅ Files Created for Deployment
+
+1. **vercel.json** - Root Vercel configuration
+2. **backend/vercel.json** - Backend-specific config
+3. **backend/api/index.py** - Serverless entry point
+4. **backend/requirements-vercel.txt** - Deployment dependencies
+5. **VERCEL_DEPLOYMENT_GUIDE.md** - Complete deployment guide
+6. **DEPLOYMENT_QUICKSTART.md** - 5-minute quick start
+7. **DEPLOYMENT_CHECKLIST.md** - Step-by-step checklist
+8. **VERCEL_ENV_TEMPLATE.txt** - Environment variables template
+9. **.gitignore** - Updated with Vercel entries
+
+## 📦 Dependencies Installed
+
+- mangum (serverless adapter for FastAPI)
+
+## 🎯 Quick Deployment Command
+
+Choose one:
+
+### Option A: Via GitHub (Recommended)
+```bash
+git init
+git add .
+git commit -m "Ready for Vercel"
+git remote add origin https://github.com/YOUR_USERNAME/bookleaf-ai.git
+git push -u origin main
+
+# Then import to Vercel: https://vercel.com/new
+```
+
+### Option B: Direct CLI Deployment
+```bash
+# Frontend
+cd frontend
+vercel --prod
+
+# Backend
+cd ../backend
+vercel --prod
+```
+
+## 🔐 Security - IMPORTANT!
+
+⚠️ **ACTION REQUIRED:**
+1. Rotate your OpenAI API key (exposed in this conversation)
+   - Go to: https://platform.openai.com/api-keys
+   - Revoke current key
+   - Generate new key
+   - Add to Vercel environment variables
+
+2. Never commit .env files to Git (already in .gitignore)
+
+## 📚 Documentation Guide
+
+1. **Quick Start** → Read DEPLOYMENT_QUICKSTART.md (5 min)
+2. **Full Guide** → Read VERCEL_DEPLOYMENT_GUIDE.md (complete instructions)
+3. **Checklist** → Follow DEPLOYMENT_CHECKLIST.md (ensure nothing missed)
+4. **Env Vars** → Copy from VERCEL_ENV_TEMPLATE.txt
+
+## 🔧 Environment Variables Needed
+
+**Frontend:**
+- NEXT_PUBLIC_API_URL
+- NEXT_PUBLIC_APP_NAME
+
+**Backend:**
+- OPENAI_API_KEY (NEW ONE!)
+- SUPABASE_URL
+- SUPABASE_KEY
+- SUPABASE_SERVICE_ROLE_KEY
+- ENVIRONMENT=production
+- DEBUG=false
+- CORS_ORIGINS (with your frontend URL)
+
+Full list in: VERCEL_ENV_TEMPLATE.txt
+
+## ✅ Pre-Deployment Checklist
+
+- [ ] Read DEPLOYMENT_QUICKSTART.md
+- [ ] Rotate OpenAI API key
+- [ ] Test locally first
+- [ ] Have Supabase credentials ready
+- [ ] Create Vercel account
+- [ ] Install Vercel CLI (optional)
+
+## 🎉 Post-Deployment
+
+After deployment:
+1. Test health endpoint: /health
+2. Test API: /api/v1/identity/resolve
+3. Verify frontend loads correctly
+4. Check Vercel Analytics
+5. Monitor logs for errors
+
+## 📞 Support
+
+- **Vercel Docs:** https://vercel.com/docs
+- **Supabase Status:** https://status.supabase.com
+- **OpenAI Status:** https://status.openai.com
+
+## 🔗 Useful Links
+
+- Vercel Dashboard: https://vercel.com/dashboard
+- Supabase Dashboard: https://supabase.com/dashboard
+- OpenAI API Keys: https://platform.openai.com/api-keys
+
+---
+
+**Ready to deploy!** Start with DEPLOYMENT_QUICKSTART.md
+**Date Created:** 2026-02-28

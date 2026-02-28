@@ -1,0 +1,48 @@
+=====================================================
+HOW TO COPY THE SCHEMA
+=====================================================
+
+OPTION 1 - Using Terminal (EASIEST):
+-------------------------------------
+1. Open Terminal (if not already open)
+2. Run this command:
+
+cat /Users/vaibhavee/project/Bookleaf_Assignment/database/schema.sql | pbcopy
+
+3. This copies the ENTIRE file to your clipboard
+4. Go back to Supabase SQL Editor
+5. Click in the editor and press Cmd+V to paste
+
+
+OPTION 2 - Using Text Editor:
+------------------------------
+1. Open Finder
+2. Navigate to: /Users/vaibhavee/project/Bookleaf_Assignment/database/
+3. Double-click "schema.sql" to open it
+4. Press Cmd+A (select all)
+5. Press Cmd+C (copy)
+6. Go to Supabase SQL Editor
+7. Press Cmd+V (paste)
+
+
+OPTION 3 - I'll show you the file:
+-----------------------------------
+The file is at:
+/Users/vaibhavee/project/Bookleaf_Assignment/database/schema.sql
+
+It contains ~280 lines of SQL that creates:
+- 8 tables (authors, identities, conversations, messages, etc.)
+- Indexes for fast queries
+- Vector indexes for AI embeddings
+- Triggers for automatic updates
+
+=====================================================
+AFTER PASTING:
+=====================================================
+1. Make sure the SQL Editor is full of text (scroll down to verify)
+2. Click "RUN" button (top right)
+3. Wait 10-15 seconds
+4. Look for success messages
+
+Tell me: "schema complete" when you see success!
+=====================================================

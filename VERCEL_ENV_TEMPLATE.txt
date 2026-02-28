@@ -1,0 +1,69 @@
+# Vercel Environment Variables Template
+# Copy these to Vercel Dashboard → Project Settings → Environment Variables
+
+# ============================================
+# FRONTEND ENVIRONMENT VARIABLES
+# ============================================
+
+NEXT_PUBLIC_API_URL=https://your-backend.vercel.app
+NEXT_PUBLIC_APP_NAME=BookLeaf AI Assistant
+
+# ============================================
+# BACKEND ENVIRONMENT VARIABLES
+# ============================================
+
+# OpenAI Configuration (REQUIRED)
+OPENAI_API_KEY=sk-proj-YOUR-NEW-KEY-HERE
+
+# Supabase Configuration (REQUIRED)
+SUPABASE_URL=https://frpjbfuslgsirgdjdczy.supabase.co
+SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZycGpiZnVzbGdzaXJnZGpkY3p5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIxOTA5MzAsImV4cCI6MjA4Nzc2NjkzMH0.KrO7CgANZp6BwBMfxxbVaOozddPlGCtZ0EFFql8cFYc
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZycGpiZnVzbGdzaXJnZGpkY3p5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MjE5MDkzMCwiZXhwIjoyMDg3NzY2OTMwfQ.M8uF897ySJce31EC7feCsRFxeZLEtitER1jzl0qmyL0
+
+# Application Settings
+APP_NAME=BookLeaf AI Assistant
+APP_VERSION=1.0.0
+ENVIRONMENT=production
+DEBUG=false
+LOG_LEVEL=INFO
+
+# API Settings
+API_V1_PREFIX=/api/v1
+CORS_ORIGINS=["https://your-frontend.vercel.app"]
+
+# LLM Configuration
+PRIMARY_MODEL=gpt-4-turbo-preview
+FALLBACK_MODEL=gpt-4
+CLASSIFICATION_MODEL=gpt-4o-mini
+EMBEDDING_MODEL=text-embedding-3-large
+EMBEDDING_DIMENSIONS=1536
+
+# Confidence Thresholds
+CONFIDENCE_THRESHOLD_AUTO_RESPOND=0.80
+CONFIDENCE_THRESHOLD_ESCALATE=0.80
+
+# RAG Configuration
+RAG_TOP_K=5
+RAG_CHUNK_SIZE=500
+RAG_CHUNK_OVERLAP=50
+RAG_MAX_CONTEXT_TOKENS=8000
+
+# Identity Matching Configuration
+FUZZY_MATCH_THRESHOLD=85
+IDENTITY_CONFIDENCE_WEIGHT=0.30
+INTENT_CONFIDENCE_WEIGHT=0.20
+RAG_CONFIDENCE_WEIGHT=0.25
+LLM_CONFIDENCE_WEIGHT=0.25
+
+# Rate Limiting
+MAX_RETRIES=3
+RETRY_DELAY=1.0
+REQUEST_TIMEOUT=30.0
+
+# ============================================
+# IMPORTANT NOTES
+# ============================================
+# 1. Replace YOUR-NEW-KEY-HERE with a fresh OpenAI API key
+# 2. Update CORS_ORIGINS with your actual frontend URL
+# 3. Set DEBUG=false for production
+# 4. Keep SUPABASE_SERVICE_ROLE_KEY secret!

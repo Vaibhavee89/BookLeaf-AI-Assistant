@@ -1,0 +1,18 @@
+name = "bookleaf-supabase-proxy"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Account ID
+account_id = "03f52e8705e89b15a8cdd00fe6be002d"
+
+# Workers configuration
+workers_dev = true
+
+# Routes (configure after deployment)
+# routes = [
+#   { pattern = "supabase-proxy.your-domain.com/*", zone_name = "your-domain.com" }
+# ]
+
+# Environment variables (optional - can be set in Cloudflare dashboard)
+# [env.production]
+# vars = { }

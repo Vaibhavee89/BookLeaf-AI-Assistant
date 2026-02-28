@@ -1,0 +1,30 @@
+# Web Framework
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic[email]
+pydantic-settings
+
+# OpenAI & LLM
+openai
+tiktoken
+
+# Database
+supabase
+
+# Identity Matching
+rapidfuzz
+phonenumbers
+
+# Utilities
+python-dotenv
+structlog
+aiofiles
+
+# Testing
+pytest
+pytest-asyncio
+
+# Development
+black
+flake8

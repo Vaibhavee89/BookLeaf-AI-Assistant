@@ -1,0 +1,308 @@
+[
+  {
+    "id": "q1",
+    "name": "High Confidence - Royalty Query",
+    "user_input": {
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@email.com",
+      "message": "When will my quarterly royalty payment be processed?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.85, 1.0],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "identity_match": "exact"
+    }
+  },
+  {
+    "id": "q2",
+    "name": "High Confidence - Publishing Process",
+    "user_input": {
+      "name": "Michael Chen",
+      "email": "m.chen@writemail.com",
+      "message": "Can you explain how the manuscript review process works?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.80, 0.95],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "identity_match": "exact"
+    }
+  },
+  {
+    "id": "q3",
+    "name": "Fuzzy Match - Similar Name",
+    "user_input": {
+      "name": "Sara Johnston",
+      "email": "s.johnston@writemail.com",
+      "message": "What are your premium add-on services?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.75, 0.90],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "identity_match": "fuzzy",
+      "notes": "Name similar to 'Sarah Johnston' in database"
+    }
+  },
+  {
+    "id": "q4",
+    "name": "Medium Confidence - Author Dashboard",
+    "user_input": {
+      "name": "Jennifer Smith",
+      "email": "jen.smith@authormail.com",
+      "message": "How do I access my sales reports in the dashboard?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.75, 0.90],
+      "intent": "technical_support",
+      "should_escalate": false,
+      "identity_match": "exact"
+    }
+  },
+  {
+    "id": "q5",
+    "name": "New Identity - General Question",
+    "user_input": {
+      "name": "Jane Doe",
+      "email": "jane.doe@newauthor.com",
+      "message": "What are your royalty rates for eBooks?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.70, 0.85],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "identity_match": "new_identity_created"
+    }
+  },
+  {
+    "id": "q6",
+    "name": "Low Confidence - Ambiguous Query",
+    "user_input": {
+      "name": "John",
+      "email": "john@email.com",
+      "message": "What's the status?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.30, 0.60],
+      "intent": "author_specific",
+      "should_escalate": true,
+      "escalation_reason": "Unclear intent or ambiguous question"
+    }
+  },
+  {
+    "id": "q7",
+    "name": "High Confidence - Specific Payment Date",
+    "user_input": {
+      "name": "Robert Williams",
+      "email": "rob.williams@gmail.com",
+      "message": "I haven't received my Q4 2025 royalty payment yet. Can you help?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.60, 0.80],
+      "intent": "author_specific",
+      "should_escalate": true,
+      "escalation_reason": "Requires access to specific author account data",
+      "notes": "Should retrieve author context but still escalate for payment verification"
+    }
+  },
+  {
+    "id": "q8",
+    "name": "High Confidence - Cover Design Service",
+    "user_input": {
+      "name": "Emma Davis",
+      "email": "emma.davis@outlook.com",
+      "message": "Tell me about your premium cover design package"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.85, 0.95],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "rag_context": "Should retrieve from premium_addons.md"
+    }
+  },
+  {
+    "id": "q9",
+    "name": "Medium Confidence - Multiple Identifiers",
+    "user_input": {
+      "name": "David Martinez",
+      "email": "david.m@different-email.com",
+      "phone": "+1-555-0106",
+      "message": "How long does the editing process typically take?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.75, 0.90],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "identity_match": "fuzzy_or_llm",
+      "notes": "Phone matches but email is different - should use LLM disambiguation"
+    }
+  },
+  {
+    "id": "q10",
+    "name": "Out of Scope - Unrelated Question",
+    "user_input": {
+      "name": "Test User",
+      "email": "test@example.com",
+      "message": "What's the weather like today?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.70, 0.85],
+      "intent": "out_of_scope",
+      "should_escalate": false,
+      "response_should_contain": "redirect to publishing-related topics"
+    }
+  },
+  {
+    "id": "q11",
+    "name": "High Confidence - Audiobook Production",
+    "user_input": {
+      "name": "Lisa Anderson",
+      "email": "lisa.a@writers.net",
+      "message": "What's included in the audiobook production package and how much does it cost?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.85, 0.95],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "rag_context": "Should retrieve from premium_addons.md"
+    }
+  },
+  {
+    "id": "q12",
+    "name": "Low Confidence - Insufficient Identity",
+    "user_input": {
+      "name": "A",
+      "email": "a@b.c",
+      "message": "Help"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.10, 0.40],
+      "intent": "unknown",
+      "should_escalate": true,
+      "escalation_reason": "Insufficient identity information and unclear intent"
+    }
+  },
+  {
+    "id": "q13",
+    "name": "High Confidence - International Distribution",
+    "user_input": {
+      "name": "Maria Garcia",
+      "email": "maria.garcia@authormail.com",
+      "message": "Do you offer international distribution? What countries do you cover?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.85, 0.95],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "rag_context": "Should retrieve from premium_addons.md or publishing_process.md"
+    }
+  },
+  {
+    "id": "q14",
+    "name": "Medium Confidence - Technical Issue",
+    "user_input": {
+      "name": "Christopher Brown",
+      "email": "c.brown@writemail.com",
+      "message": "I'm getting an error when trying to upload my manuscript. It says 'file too large'."
+    },
+    "expected_outcome": {
+      "confidence_range": [0.65, 0.80],
+      "intent": "technical_support",
+      "should_escalate": true,
+      "escalation_reason": "Technical issue requiring specific troubleshooting"
+    }
+  },
+  {
+    "id": "q15",
+    "name": "High Confidence - Timeline Query",
+    "user_input": {
+      "name": "Amanda Wilson",
+      "email": "amanda.wilson@gmail.com",
+      "message": "If I submit my manuscript today, how long until it's published?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.85, 0.95],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "rag_context": "Should retrieve timeline from publishing_process.md"
+    }
+  },
+  {
+    "id": "q16",
+    "name": "Edge Case - Multiple Questions",
+    "user_input": {
+      "name": "Daniel Lee",
+      "email": "dan.lee@authors.com",
+      "message": "What are your royalty rates? Also, do you offer marketing services? And when do payments go out?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.75, 0.90],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "notes": "Should handle multiple questions in one response"
+    }
+  },
+  {
+    "id": "q17",
+    "name": "Typo Test - Misspelled Name",
+    "user_input": {
+      "name": "Jessika Moore",
+      "email": "jess.moore@email.com",
+      "message": "What genres do you publish?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.75, 0.90],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "identity_match": "fuzzy",
+      "notes": "Name 'Jessika' vs 'Jessica' in database - should fuzzy match"
+    }
+  },
+  {
+    "id": "q18",
+    "name": "High Confidence - Refund Policy",
+    "user_input": {
+      "name": "Kevin Harris",
+      "email": "kevin.harris@gmail.com",
+      "message": "What is your refund policy for authors?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.80, 0.95],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "rag_context": "Should retrieve from royalty_structure.md or premium_addons.md"
+    }
+  },
+  {
+    "id": "q19",
+    "name": "Low Confidence - Language Barrier",
+    "user_input": {
+      "name": "Test Author",
+      "email": "test@test.com",
+      "message": "Me want book publish. How cost?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.50, 0.70],
+      "intent": "general_knowledge",
+      "should_escalate": true,
+      "escalation_reason": "Low intent confidence due to unclear language",
+      "notes": "Should still attempt to provide helpful response"
+    }
+  },
+  {
+    "id": "q20",
+    "name": "High Confidence - BookBub Featured Deal",
+    "user_input": {
+      "name": "Olivia Martin",
+      "email": "olivia.martin@authormail.com",
+      "message": "Can you help me get my book featured on BookBub? What's the process?"
+    },
+    "expected_outcome": {
+      "confidence_range": [0.85, 0.95],
+      "intent": "general_knowledge",
+      "should_escalate": false,
+      "rag_context": "Should retrieve BookBub information from premium_addons.md"
+    }
+  }
+]
